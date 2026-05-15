@@ -82,6 +82,32 @@ section:not(.home) {
     padding: 8rem 9% 4rem;
 }
 
+
+/* WhatsApp Floating Button */
+.whatsapp-float{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 99999;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+    background-color: #1ebe5d;
+}
 /* Home */
 .home{
     display: flex;
