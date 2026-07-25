@@ -234,6 +234,102 @@
     font-size: 14px;
     margin-top: 5px;
 }
+
+        /* EXPERIENCE SECTION */
+
+.experience-card {
+
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:25px;
+    padding:35px;
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+    backdrop-filter:blur(12px);
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    transition:.4s ease;
+
+}
+
+
+.experience-card:hover {
+
+    transform:translateY(-8px);
+    border-color:#00abf0;
+    box-shadow:0 20px 45px rgba(0,171,240,.25);
+
+}
+
+
+.experience-icon {
+
+    width:70px;
+    height:70px;
+    background:rgba(0,171,240,.15);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+
+.experience-icon i {
+
+    font-size:35px;
+    color:#00abf0;
+
+}
+
+
+.experience-content h3 {
+
+    color:white;
+    font-size:24px;
+    margin-bottom:15px;
+
+}
+
+
+.experience-content p {
+
+    color:#ccc;
+    line-height:1.7;
+    margin-bottom:25px;
+
+}
+
+
+.experience-skills {
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+
+}
+
+
+.exp-item {
+
+    background:rgba(255,255,255,.05);
+    padding:15px;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+.exp-item i {
+
+    color:#00abf0;
+    font-size:24px;
+
+}
     </style>
 
 </head>
@@ -513,44 +609,54 @@
 
 <!-- Experience Section -->
 <section class="experience" id="experience">
+
     <h2 class="heading">My <span>Experience</span></h2>
 
-    <div class="experience-content">
+    <div class="experience-card">
 
-        <h3>Software Development Experience</h3>
+        <div class="experience-icon">
+            <i class='bx bx-code-alt'></i>
+        </div>
 
-        <ul>
-            <li>Full-stack web applications</li>
-            <li>RESTful APIs</li>
-            <li>Databases & ORM tools</li>
-            <li>Git version control</li>
-        </ul>
+        <div class="experience-content">
+
+            <h3>Software Development Experience</h3>
+
+            <p>
+                Experienced in designing and developing full-stack software solutions,
+                business management systems, and responsive websites using modern
+                technologies.
+            </p>
+
+            <div class="experience-skills">
+
+                <div class="exp-item">
+                    <i class='bx bx-globe'></i>
+                    <span>Full-stack Web Applications</span>
+                </div>
+
+                <div class="exp-item">
+                    <i class='bx bx-server'></i>
+                    <span>RESTful APIs Development</span>
+                </div>
+
+                <div class="exp-item">
+                    <i class='bx bx-data'></i>
+                    <span>Database Design & ORM Tools</span>
+                </div>
+
+                <div class="exp-item">
+                    <i class='bx bx-git-branch'></i>
+                    <span>Git Version Control</span>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
+
 </section>
-
-        <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me</span></h2>
-
-            <div class="contact-container">
-                <div class="contact-info-box">
-                    <h3>Get in Touch</h3>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class='bx bx-phone'></i>
-                            <span>0756 841 116 / 0613 409 116</span>
-                        </div>
-
-                        <div class="contact-item">
-                            <i class='bx bx-envelope'></i>
-                            <span>augustineraphael2020@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
     </div>
 
