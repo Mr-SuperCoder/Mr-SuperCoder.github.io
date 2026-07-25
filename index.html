@@ -34,6 +34,60 @@
             transform: scale(1.1);
             background: #1ebe5d;
         }
+
+        .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 25px;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.project-box:hover {
+    transform: translateY(-8px);
+    border-color: #00abf0;
+    box-shadow: 0 15px 35px rgba(0,171,240,0.25);
+}
+
+.project-box h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    color: #cfcfcf;
+    line-height: 1.7;
+}
+
+.tech {
+    display: inline-block;
+    background: rgba(0,171,240,0.15);
+    color: #00abf0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.project-link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    color: #00abf0;
+}
     </style>
 
 </head>
