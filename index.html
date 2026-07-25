@@ -11,6 +11,93 @@
 
     <!-- ONLY ADDITION: WhatsApp Floating CSS -->
     <style>
+
+        /* ABOUT CARD */
+
+.about-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 25px;
+    padding: 35px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transition: .4s ease;
+}
+
+
+.about-card:hover {
+    transform: translateY(-8px);
+    border-color: #00abf0;
+    box-shadow: 0 20px 45px rgba(0,171,240,0.25);
+}
+
+
+.about-text p {
+    color: #d0d0d0;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* COMPETENCIES */
+
+.competencies {
+    margin-top: 35px;
+}
+
+
+.competencies h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+.competency-grid {
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+
+}
+
+
+.competency-card {
+
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    transition:.3s ease;
+
+}
+
+
+.competency-card:hover {
+
+    transform:translateY(-5px);
+    border-color:#00abf0;
+
+}
+
+
+.competency-card i {
+
+    font-size:30px;
+    color:#00abf0;
+
+}
+
+
+.competency-card span {
+
+    color:white;
+    font-size:15px;
+
+}
         .whatsapp-float{
             position: fixed;
             bottom: 25px;
@@ -204,98 +291,60 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section class="about" id="about">
-            <h2 class="heading">About <span>Me</span></h2>
+       <!-- About Section -->
+<section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
 
-            <div class="about-content">
-                <p>
-                    Currently a Final-year Software Engineering student at the University of Dodoma with experience in designing and developing full-stack software solutions. Passionate about building scalable, user-focused, and business-oriented systems. Interested in software analysis, system design, APIs, and digital transformation solutions..
-                </p>
+    <div class="about-card">
 
-                <div class="competencies">
-                    <h3>Core Competencies</h3>
-                    <ul>
-                        <li>Problem Solving</li>
-                        <li>Team Collaboration</li>
-                        <li>Communication Skills</li>
-                        <li>Attention to Detail</li>
-                        <li>Adaptability and Fast Learning</li>
-                    </ul>
+        <div class="about-text">
+            <p>
+                Currently a Final-year Software Engineering student at the University of Dodoma 
+                with experience in designing and developing full-stack software solutions. 
+                Passionate about building scalable, user-focused, and business-oriented systems. 
+                Interested in software analysis, system design, APIs, database development, 
+                and digital transformation solutions.
+            </p>
+        </div>
+
+
+        <div class="competencies">
+
+            <h3>Core Competencies</h3>
+
+            <div class="competency-grid">
+
+                <div class="competency-card">
+                    <i class='bx bx-code-alt'></i>
+                    <span>Problem Solving</span>
                 </div>
+
+                <div class="competency-card">
+                    <i class='bx bx-group'></i>
+                    <span>Team Collaboration</span>
+                </div>
+
+                <div class="competency-card">
+                    <i class='bx bx-message-square-detail'></i>
+                    <span>Communication Skills</span>
+                </div>
+
+                <div class="competency-card">
+                    <i class='bx bx-detail'></i>
+                    <span>Attention to Detail</span>
+                </div>
+
+                <div class="competency-card">
+                    <i class='bx bx-brain'></i>
+                    <span>Fast Learning</span>
+                </div>
+
             </div>
-        </section>
 
-        <!-- Skills Section -->
-        <section class="skills" id="skills">
-            <h2 class="heading">Technical <span>Skills</span></h2>
+        </div>
 
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Frontend Development</h3>
-                    <div class="skill-tags">
-                        <span class="tag">React.js</span>
-                        <span class="tag">Next.js</span>
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Tailwind CSS</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Backend Development</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Node.js (Express)</span>
-                        <span class="tag">Spring Boot (Java)</span>
-                        <span class="tag">PHP</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">CodeIgniter</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Mobile App Development</h3>
-                    <div class="skill-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">Android Development</span>
-                        <span class="tag">iOS Development</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Machine Learning</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Python ML</span>
-                        <span class="tag">Data Analysis</span>
-                        <span class="tag">AI/ML Algorithms</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Database Management</h3>
-                    <div class="skill-tags">
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">TypeORM</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Git</span>
-                        <span class="tag">GitHub</span>
-                        <span class="tag">Visual Studio Code</span>
-                        <span class="tag">IntelliJ IDEA</span>
-                        <span class="tag">NetBeans</span>
-                        <span class="tag">RESTful APIs</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+    </div>
+</section>
         <!-- Projects Section -->
 <section class="projects" id="projects">
     <h2 class="heading">My <span>Projects</span></h2>
