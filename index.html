@@ -88,6 +88,65 @@
 .project-link:hover {
     color: #00abf0;
 }
+
+        .education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.education-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.education-box:hover {
+    transform: translateY(-8px);
+    border-color: #00abf0;
+    box-shadow: 0 15px 35px rgba(0,171,240,0.25);
+}
+
+.education-icon {
+    width: 65px;
+    height: 65px;
+    background: rgba(0,171,240,0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.education-icon i {
+    font-size: 32px;
+    color: #00abf0;
+}
+
+.education-content h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.education-content .institution {
+    color: #00abf0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.education-content .year {
+    color: #cfcfcf;
+    font-size: 14px;
+    margin-top: 5px;
+}
     </style>
 
 </head>
